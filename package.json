@@ -1,8 +1,11 @@
 {
-  "name": "netlify-env-variables",
+  "name": "netlify-vars",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "netlify-vars": "./bin/exe.js"
+  },
   "dependencies": {
     "netlify": "^2.4.6"
   }

@@ -26,7 +26,7 @@ async function getEnv({
     const site = await getSiteByName(siteName, accessToken);
     if (!site) throw `Could not find site ${siteName}`;
     for (let [key, value] of Object.entries(site.build_settings.env)) {
-      console.log(`${key}=${value}`);
+      console.log(`export ${key}=${value}`);
     }
   } catch (e) {
     console.error(e);
